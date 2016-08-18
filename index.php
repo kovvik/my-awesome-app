@@ -4,7 +4,7 @@ $assets_url="http://my-awesome-site.local/assets/";
 
 $files = array (
     "Free_logo.svg",
-    "SampleVideo_1280x720_1mb.mp4",
+    "tumblr_mvv8e1OQX51qj73e2o1_500.gif",
     "SH00020-Multiple-Square-Logo-Template.png"
     );
 
