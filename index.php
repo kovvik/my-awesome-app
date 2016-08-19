@@ -3,9 +3,9 @@
 $assets_url="http://my-awesome-site.local/assets/";
 
 $files = array (
-    "Free_logo_tcod2x.svg",
-    "tumblr_mvv8e1OQX51qj73e2o1_500_viaiep.gif",
-    "SH00020-Multiple-Square-Logo-Template_wvwy9x.png"
+    "v1471533898/Free_logo_tcod2x.svg",
+    "v1471533898/tumblr_mvv8e1OQX51qj73e2o1_500_viaiep.gif",
+    "v1471533899/SH00020-Multiple-Square-Logo-Template_wvwy9x.png"
     );
 
 $content = $assets_url.$files[rand(0, 2)];
