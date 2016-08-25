@@ -11,4 +11,6 @@ $files = array (
 
 $image = $assets_url.$files[rand(0, 2)];
 $video = $assets_url.$files[3];
+$hostname = gethostname();
+
 include "templates/main.tpl";
