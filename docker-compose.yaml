@@ -3,12 +3,13 @@
 version: '2'
 services:
   php:
-    image: dev.viktor-kovacs.local:5000/my-awesome-app:0.0.1
-    build: .
+#    image: dev.viktor-kovacs.local:5000/my-awesome-app:0.0.1
+#    build: .
+    image: php:7.0.13-fpm
     ports:
       - "9000:9000"
     volumes:
-      - /var/www/html
+      - "./src/:/var/www/html/src"
   nginx:
     image: nginx:latest
     ports:
