@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="starter-template">
 				<h1>My Awesome App</h1>
-				<img src="<?php echo $image ?>" />
+				<img src="<?php echo $image ?>" class="img-thumbnail" width="100px" height="100px"/>
 				<hr>
 				<video height="240" width="320" controls>
 					<source src="<?php echo $video ?>" type="video/mp4">
