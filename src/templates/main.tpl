@@ -14,11 +14,8 @@
 		<div class="container">
 			<div class="starter-template">
 				<h1>My Awesome App</h1>
-				<img src="<?php echo $image ?>" class="img-thumbnail" width="100px" height="100px"/>
+				<img src="<?php echo $image ?>" class="img-thumbnail" width="300px" height="300px"/>
 				<hr>
-				<video height="240" width="320" controls>
-					<source src="<?php echo $video ?>" type="video/mp4">
-				</video>
 			</div>
 		</div>
 		<footer class="footer">
