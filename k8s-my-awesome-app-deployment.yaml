@@ -1,0 +1,36 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-awsome-app-dmt
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: my-awesome-app
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /etc/nginx/conf.d
+          name: nginx-config
+        - mountPath: /var/www/html
+          name: app-src
+      - name: php
+        image: php:7.0.13-fpm
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+        - mountPath: /var/www/html
+          name: app-src
+      volumes:
+      - name: app-src
+        gitRepo:
+          repository: "https://github.com/kovvik/my-awesome-app.git"
+      - name: nginx-config
+        configMap:
+          name: my-awesome-app-config

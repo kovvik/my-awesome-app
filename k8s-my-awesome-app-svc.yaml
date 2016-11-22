@@ -1,0 +1,12 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-awesome-app-svc
+spec:
+  selector:
+    app: my-awesome-app
+  ports:
+  - protocol: TCP
+    port: 80
+  type: LoadBalancer
