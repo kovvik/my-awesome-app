@@ -23,7 +23,7 @@
 		</div>
 		<footer class="footer">
       			<div class="container">
-			<p class="text-muted"><?= $hostname ?></p>
+			<p class="text-muted">Hostname: <?= $hostname ?></p>
       			</div>
 		</footer>
 
