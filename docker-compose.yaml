@@ -1,0 +1,20 @@
+---
+
+version: '2'
+services:
+  php:
+    image: dev.viktor-kovacs.local:5000/my-awesome-app:0.0.1
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/www/html
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8088:80"
+    volumes:
+      - "./nginx/:/etc/nginx/conf.d"
+    volumes_from:
+      - php
+
