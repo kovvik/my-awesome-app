@@ -1,6 +1,6 @@
 <?php
 
-$assets_url="http://my-awesome-site.local/assets/";
+$assets_url="assets/";
 
 $files = array (
     "Free_logo_tcod2x.svg",
